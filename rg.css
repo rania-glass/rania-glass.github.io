@@ -323,15 +323,16 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 .rg-vw-font-20 {font-size: 20vw}
 .rg-vw-size-100 {width: 100vw}
 p span {
-    letter-spacing: 10vw;
     position: absolute;
+    left: 20%;
     top: 300px;
     text-align: center;
     color:white;
     font: bold 10vw Arial, Sans-Serif;
+    letter-spacing: 5vw;
     background: rgb(0, 0, 200);
     background: rgba(0,0,200,0.7);
-    padding:10px;
+    padding: 0px 0px 0px 0px;
 }
 /*if less than small, hide this element*/
 
