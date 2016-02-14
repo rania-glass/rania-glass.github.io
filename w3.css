@@ -313,9 +313,33 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 .rg-navbar a,.rg-topnav a,.rg-sidenav a,.rg-dropnav a,.rg-dropdown-content a{text-decoration:none !important}
 .rg-navbar ul.rg-right {list-style-type: none;}
 .rg-topnav a{padding: 0px;border-bottom:0px solid transparent}
-.rg-topnav a:hover{border-bottom:0px solid #fff}
+.rg-topnav a:hover{border-bottom:0px solid #000}
 .rg-topnav .rg-dropdown-hover a{border-bottom:0}
 .rg-opennav,.rg-closenav{color:inherit}
 .rg-opennav:hover,.rg-closenav:hover{cursor:pointer;opacity:0.8}
 .rg-navbar a,.rg-topnav a,.rg-sidenav a,.rg-dropnav a,.rg-pagination li a,.rg-hoverable tbody tr,.rg-btn,.rg-btn-floating,.rg-btn-floating-large
 {-webkit-transition:all 0.3s ease;transition:all 0.3s ease}
+
+p span {
+    letter-spacing: 20px;
+    position: absolute;
+    top: 300px;
+    width: 37%;
+    text-align: center;
+    color:white;
+    font: bold 100px Arial, Sans-Serif;
+    background: rgb(0, 0, 200);
+    background: rgba(0,0,200,0.7);
+    padding:10px;
+}
+
+p span:hover {
+  background: rgb(0, 0, 0)
+  background: rgba(0, 0, 0, 0.7)
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
