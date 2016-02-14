@@ -133,7 +133,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-col.s10{width:83.33333%}
 .w3-col.s11{width:91.66666%}
 .w3-col.s12,.w3-half,.w3-third,.w3-twothird,.w3-quarter{width:99.99999%}
-@media only screen and (min-width:601px){
+@media only screen and (min-width:608px){
 
 .w3-col.m1{width:8.33333%}
 .w3-col.m2{width:16.66666%}
@@ -147,7 +147,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-col.m10{width:83.33333%}
 .w3-col.m11{width:91.66666%}
 .w3-col.m12{width:99.99999%}}
-@media only screen and (min-width:993px){
+@media only screen and (min-width:1215px){
 .w3-col.l1{width:8.33333%}
 .w3-col.l2{width:16.66666%}
 .w3-col.l3,.w3-quarter{width:24.99999%}
@@ -320,14 +320,15 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 .rg-opennav:hover,.rg-closenav:hover{cursor:pointer;opacity:0.8}
 .rg-navbar a,.rg-topnav a,.rg-sidenav a,.rg-dropnav a,.rg-pagination li a,.rg-hoverable tbody tr,.rg-btn,.rg-btn-floating,.rg-btn-floating-large
 {-webkit-transition:all 0.3s ease;transition:all 0.3s ease}
-.rg-vw-20 {font-size: 20vw}
+.rg-vw-font-20 {font-size: 20vw}
+.rg-vw-size-100 {width: 100vw}
 p span {
-    letter-spacing: 20px;
+    letter-spacing: 10vw;
     position: absolute;
     top: 300px;
     text-align: center;
     color:white;
-    font: bold 100px Arial, Sans-Serif;
+    font: bold 10vw Arial, Sans-Serif;
     background: rgb(0, 0, 200);
     background: rgba(0,0,200,0.7);
     padding:10px;
