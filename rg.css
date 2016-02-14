@@ -307,7 +307,7 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 
 /*Rania nav */
 .rg-navbar {list-style-type:none;margin:0;padding:0;overflow:hidden}
-.rg-navbar li{float:left}.rg-navbar li a{display:block;padding:8px 16px}.rg-navbar li a:hover{color:#000;background-color:#0000FF}
+.rg-navbar li{float:left}.rg-navbar li a{display:block;padding:16px 16px; font-size: 24px}.rg-navbar li a:hover{color:#fff;background-color:#555599}
 .rg-navbar .rg-dropdown-hover,.rg-navbar .rg-dropdown-click{position:static}
 .rg-navbar .rg-dropdown-hover:hover,.rg-navbar .rg-dropdown-hover:first-child,.rg-navbar .rg-dropdown-click:hover{background-color:#ccc;color:#000;}
 .rg-topnav{padding:8px 8px}
@@ -320,18 +320,21 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 .rg-opennav:hover,.rg-closenav:hover{cursor:pointer;opacity:0.8}
 .rg-navbar a,.rg-topnav a,.rg-sidenav a,.rg-dropnav a,.rg-pagination li a,.rg-hoverable tbody tr,.rg-btn,.rg-btn-floating,.rg-btn-floating-large
 {-webkit-transition:all 0.3s ease;transition:all 0.3s ease}
+
+
 .rg-vw-font-20 {font-size: 20vw}
 .rg-vw-size-100 {width: 100vw}
+.rg-blue{color:rgb(255,255,255) !important; background-color: rgb(0,0,100) !important}, .rg-hover-blue:hover{color: #fff !important; background-color: #000000 !important}
 p span {
     position: absolute;
-    left: 20%;
+    left: 0%;
     top: 300px;
     text-align: center;
     color:white;
     font: bold 10vw Arial, Sans-Serif;
     letter-spacing: 5vw;
-    background: rgb(0, 0, 200);
-    background: rgba(0,0,200,0.7);
+    background: rgb(0, 0, 100);
+    background: rgba(0,0,100,0.7);
     padding: 0px 0px 0px 0px;
 }
 /*if less than small, hide this element*/
