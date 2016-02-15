@@ -356,3 +356,6 @@ p span:hover {
   clear: both;
   display: block;
 }
+#projects {
+  left: 20%
+}
