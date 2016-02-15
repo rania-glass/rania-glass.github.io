@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div id="background" class="w3-white" "w3-col 12">
-      <div id="header" class="w3-col 12">
+    <div id="background" class="w3-white" "w3-center">
+      <div id="header">
 
         <!-- Set up nav bar -->
         <ul id="navbar" class="rg-navbar rg-blue w3-text-shadow">
@@ -25,9 +25,52 @@
         </ul>
     </div>
 
+    <div class="w3-row">
+      <div id="imgbanner" class="w3-black" "rg-repeat">
+      </div>
+      <script>
+      // var pics = [pictures from the folder]
+      var i;
+      var picsdiv = ""
+      var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg",
+      "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "dconglasses.jpg"]
+        for (i = 0; i < pics.length; i++) {
+            picsdiv += "<img alt='photo' style='padding: 2px; width: 50px; height: 50px;' src='images\\grayscaled\\" + pics[i] + "'></img>"
+        }
+        document.getElementById('imgbanner').innerHTML = picsdiv;
+      </script>
+    </div>
 
 
+<div name="projects" class="rg-row" "w3-center">
+  <div name="border" class="w3-border" "w3-center">
 
+    <div class="w3-row" "w3-center">
+      <div class="w3-center" "rg-vw-font-20">
+      <h1 class="rg-vw-font-5" "rg-down-10"> Staff Selection Assistant </h1>
+      <img class="" style="width:20%; height:20%;" src="images\\pythonUI.png"/> </img>
+      
+      <p><a href=https://github.com/rania-glass/StaffSelection> Staff Selection</a></p>
+
+
+    </div>
+  </div>
+
+  </div>
+  <div name="border" class="w3-border">
+    <div class="w3-row">
+      <div class="w3-center" "rg-vw-font-20">
+      <h1 class="rg-vw-font-5" > Personality Filter </h1>
+            <img style="width:20%; height:20%;" src="images\\pf.png"/> </img>
+
+      <p><a href=https://personalityfilter.co/test.php> Personality Filter </a> </p>
+
+    </div>
+  </div>
+  </div>
+
+
+</div>
 
     </div>
   </div>
