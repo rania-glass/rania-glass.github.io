@@ -359,3 +359,9 @@ p span:hover {
 #projects {
   left: 20%
 }
+
+.summary {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10px;
+}
