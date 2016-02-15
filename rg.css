@@ -321,9 +321,15 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 .rg-navbar a,.rg-topnav a,.rg-sidenav a,.rg-dropnav a,.rg-pagination li a,.rg-hoverable tbody tr,.rg-btn,.rg-btn-floating,.rg-btn-floating-large
 {-webkit-transition:all 0.3s ease;transition:all 0.3s ease}
 
-
+.rg-repeat {background-repeat: repeat-x; background-image: url("/images/grayscaled/dconglasses.jpg"); width: 50px; height: 50px;}
 .rg-vw-font-20 {font-size: 20vw}
+.rg-vw-font-5 {font-size: 5vw}
 .rg-vw-size-100 {width: 100vw}
+
+.rg-right-corner{position: absolute; bottom: 0; right: 0;}
+
+
+
 .rg-blue{color:rgb(255,255,255) !important; background-color: rgb(0,0,100) !important}, .rg-hover-blue:hover{color: #fff !important; background-color: #000000 !important}
 p span {
     position: absolute;
