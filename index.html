@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div id="background" class="w3-white" "w3-col 12">
-      <div id="header" class="w3-col 12">
+    <div id="background" class="w3-white" "w3-col 12" style="width:100%">
+      <div id="header">
 
         <!-- Set up nav bar -->
-        <ul id="navbar" class="rg-navbar rg-blue w3-text-shadow">
+        <ul id="navbar" class="rg-navbar rg-blue">
           <li><a href="index.html"> <img class="w3-circle" src="images\grayscaled\dconglasses.jpg" alt="pic" height=30 width=30 </img></a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -25,36 +25,76 @@
         </ul>
     </div>
 
-    <!-- Floating name overlay -->
-    <div class="row" "rg-vw-size-100">
-      <div name="nametext" class= "w3-border" "w3-text-shadow" "w3-blue" "w3-col.s10" "w3-col.m8" "w3-col.l6">
-                    <p><span>RANIA</span></p>
-      </div>
-    </div>
+
 
 <!-- This is a for loop. You are writing out every single repetition of a for loop.
 You could have this done in like 30 seconds, but no, you wanted to write every single one by hand
 because you didn't want to deal "learning a new language". Like that's a bad thing. That's literally
 why you're doing this project. Go look up js for-loop.
 Damn cat. -->
-    <div id="pics" class="w3-col.s12" "w3-col.m4" "w3-col.l6">
+
+          <!-- ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg",
+          "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "dconglasses.jpg"] -->
+    <div id="pics">
+        <div class="w3-row">
+          <div class="w3-col l3 m4 s12" style="width:inherit;">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12" style="width:inherit;">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12" style="width:inherit;">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12" style="width:inherit;">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
+            <img src="images/grayscaled/henna.jpg"; alt="henna";/></img>
+          </div>
+          <div class="w3-col l3 m4 s12">
     </div>
-      <script>
-      // var pics = [pictures from the folder]
-      var i;
-      var picsdiv = ""
-      var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg",
-      "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "dconglasses.jpg"]
-        for (i = 0; i < pics.length; i++) {
-            picsdiv += "<img alt='photo' src='images\\grayscaled\\" + pics[i] + "'></img>"
-        }
-        console.log(picsdiv)
-        document.getElementById('pics').innerHTML = picsdiv;
-      </script>
-
-
-
-
+    <!-- Floating name overlay -->
+    <p><span>RANIA</span></p>
 
 
     </div>
