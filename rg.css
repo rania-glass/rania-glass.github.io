@@ -303,6 +303,7 @@ position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duratio
 
 /*Rania colors*/
 .w3-text-midnight-blue{color:#191970 !important}.w3-midnight-blue,.w3-hover-midnight-blue:hover{color:#fff !important;background-color:#191970 !important}
+.rg-text-dagny-purple{color:#170B6B !important!}.rg-dagny-purple,.rg-hover-dagny-purple:hover{color:#fff !important;background-color:#170B3B !important }
 
 /*Rania nav */
 .rg-navbar {list-style-type:none;margin:0;padding:0;overflow:hidden}
