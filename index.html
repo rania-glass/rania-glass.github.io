@@ -13,6 +13,7 @@
 
 <body>
     <div id="background" class="w3-white" "w3-col 12" style="width:100%">
+
       <div id="header">
 
         <!-- Set up nav bar -->
@@ -24,31 +25,28 @@
           <!-- <li><a href="interests.html">Interests</a></li> -->
           <li><a href="resume.html">Resume</a></li>
         </ul>
+      </div>
+
+
+<div class=content>
+    <div id="imgbanner" style="height:device-height;">
     </div>
 
-
-
-    <div id="imgbanner">
-    </div>
       <script>
-      // var pics = [pictures from the folder]
-      var i;
-      var picsdiv = "<div class='row'>    "
-      var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg",
-      "glasses.jpg", "henna.jpg", "drawwindow.jpg", "hackGThead.png"]
-        for (i = 0; i < 16; i++) {
-            picsdiv += "<div class='w3-col l3 m4 s12'>"
-            + "<img alt='" + pics[i] + "' style='width:100%;' src='images\\grayscaled\\" + pics[i] + "'></img>"
-            + "</div>"
-        }
-        picsdiv += "</div>"
-        document.getElementById('imgbanner').innerHTML = picsdiv;
+        // var pics = [pictures from the folder]
+        var i;
+        var picsdiv = "<div class='row'>    "
+        var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg",
+        "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "hackGThead.png"]
+          for (i = 0; i < 12; i++) {
+              picsdiv += "<div class='w3-col l3 m4 s12'>"
+              + "<img alt='" + pics[i] + "' style='width:100%;' src='images\\grayscaled\\" + pics[i] + "'></img>"
+              + "</div>"
+          }
+          picsdiv += "</div>"
+          document.getElementById('imgbanner').innerHTML = picsdiv;
       </script>
-        <div class="w3-row">
-        </div>
     <p><span>RANIA</span></p>
-
-
     </div>
   </div>
 </body>
