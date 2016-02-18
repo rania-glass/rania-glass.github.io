@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="background" class="w3-white" "w3-col 12">
+    <div id="background" class="w3-light-grey" "w3-col 12">
       <div id="header" class="w3-col 12" "w3-row">
 
         <!-- Set up nav bar -->
@@ -46,19 +46,36 @@
     </div>
 
 
-<div name="border" class="w3-border">
-    <div class="w3-row">
-      <div class="w3-center" "rg-vw-font-20">
-      <h1 class="rg-vw-font-5" "rg-down-10"> Contact Information </h1>
-      <p> email: rania.glass@gatech.edu </p>
-      <p> phone: 678 471 5606 </p>
-      <p><a href=https://www.github.com/rania-glass> GitHub </a> </p>
-      <p><a href=https://www.linkedin.com/in/raniaglass> LinkedIn </a> </p>
-      <p><a href=https://www.facebook.com/rania.glass> Facebook </a> </p>
-    </div>
-  </div>
+      <div name="border" class="w3-border">
+          <div class="w3-row">
+            <div class="w3-center" "rg-vw-font-20" style="height:400px;">
+            <h1 class="rg-vw-font-5" "rg-down-10"> Contact Information </h1>
+            <p> email: rania.glass@gatech.edu </p>
+            <p> phone: 678 471 5606 </p>
+            <p><a href=https://www.github.com/rania-glass> GitHub </a> </p>
+            <p><a href=https://www.linkedin.com/in/raniaglass> LinkedIn </a> </p>
+            <p><a href=https://www.facebook.com/rania.glass> Facebook </a> </p>
+          </div>
+        </div>
+      </div>
 
-</div>
+      <div class="w3-row">
+        <div class="w3-col l12 m12 s12">
+        <div id="bottompics" class="w3-black" style="max-height:5%; overflow-x:hidden;">
+        </div>
+      </div>
+        <script>
+        // var pics = [pictures from the folder]
+        var i;
+        var picsdiv = ""
+        var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg",
+        "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg"]
+          for (i = 0; i < 4; i++) {
+              picsdiv += "<img alt='photo' style='padding: 10px 5px; width: 25%; height: 50%;' src='images\\grayscaled\\" + pics[i] + "'></img>"
+          }
+          document.getElementById('bottompics').innerHTML = picsdiv;
+        </script>
+      </div>
 
     </div>
   </div>
