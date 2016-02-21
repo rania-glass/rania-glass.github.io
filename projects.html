@@ -4,19 +4,21 @@
   <title>Rania's Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="rg.css">
-  <meta name="description" content="Projects">
+  <meta name="description" content="Rania's Projects">
   <meta name="keywords" content="Rania, Glass, personal, website, kitty, cat, Deadhead, Scarlet Begonias">
   <meta name="author" content="Rania Glass">
   <meta charset="UTF-8">
+  <link rel="icon" type="img/ico" href="images/favicon.ico">
+
 </head>
 
 <body>
-    <div id="background" class="w3-white" "w3-center">
+    <div id="background" class="w3-light-grey" "w3-center">
       <div id="header">
 
         <!-- Set up nav bar -->
         <ul id="navbar" class="rg-navbar rg-blue w3-text-shadow">
-          <li><a href="index.html"> <img class="w3-circle" src="images\grayscaled\dconglasses.jpg" alt="pic" height=30 width=30 </img></a></li>
+          <li><a href="index.html"> <img class="w3-circle" src="images\grayscaled\hackGThead.png" alt="pic" height=30 width=30 </img></a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="projects.html">Projects</a></li>
           <!-- <li><a href="leadership.html">Leadership</a></li>
@@ -26,16 +28,18 @@
     </div>
 
     <div class="w3-row">
-      <div id="imgbanner" class="w3-black" "rg-repeat">
+      <div class="w3-col l12 m12 s12">
+      <div id="imgbanner" class="w3-black" style="max-height:5%; overflow-x:hidden;">
       </div>
+    </div>
       <script>
       // var pics = [pictures from the folder]
       var i;
       var picsdiv = ""
       var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg",
-      "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "dconglasses.jpg"]
+      "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg"]
         for (i = 0; i < pics.length; i++) {
-            picsdiv += "<img alt='photo' style='padding: 2px; width: 50px; height: 50px;' src='images\\grayscaled\\" + pics[i] + "'></img>"
+            picsdiv += "<img alt='photo' style='padding: 2px; width: 5%; height: 5%;' src='images\\grayscaled\\" + pics[i] + "'></img>"
         }
         document.getElementById('imgbanner').innerHTML = picsdiv;
       </script>
