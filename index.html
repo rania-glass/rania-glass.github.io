@@ -17,37 +17,51 @@
       <div id="header">
 
         <!-- Set up nav bar -->
-        <ul id="navbar" class="rg-navbar rg-blue">
+        <ul id="navbar" class="rg-navbar w3-black">
           <li><a href="index.html">Home</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="projects.html">Projects</a></li>
           <!-- <li><a href="leadership.html">Leadership</a></li> -->
-          <!-- <li><a href="interests.html">Interests</a></li> -->
+          <li><a href="bio.html">Bio</a></li>
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </div>
 
 
 <div class=content>
+  <div class="w3-center">
     <div id="imgbanner" style="height:device-height;">
     </div>
 
       <script>
         // var pics = [pictures from the folder]
         var i;
-        var picsdiv = "<div class='row'>    "
-        var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "ghpshoes.jpg", "glasses.jpg", "henna.jpg", "drawwindow.jpg",
-        "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg", "hackGThead.png"]
-          for (i = 0; i < 12; i++) {
-              picsdiv += "<div class='w3-col l3 m4 s12'>"
+        var picsdiv = "<div class='row'>"
+        var pics = ["henna.jpg", "drawwindow.jpg", "ghpshoes.jpg", "glasses.jpg"]
+          for (i = 0; i < pics.length; i++) {
+              picsdiv += "<div class='w3-col l3 m3 s3'>"
               + "<img alt='" + pics[i] + "' style='width:100%;' src='images\\grayscaled\\" + pics[i] + "'></img>"
               + "</div>"
           }
-          picsdiv += "</div>"
+          picsdiv += "</div> </row>"
           document.getElementById('imgbanner').innerHTML = picsdiv;
       </script>
-    <p><span>RANIA</span></p>
-    </div>
+
+      <row>
+<div class="w3-col l10 m8 s1">
+          <h1 id="welcomeheader"> RANIA </h1>
+</div>
+  </row>
+
+      <row>
+        <p style="display:block;margin-top:200px;font-size:200%">Georgia Tech &amp&amp  CS Major &amp&amp Challenge Seeker</p>
+      </row>
+
+      <div id="imgbanner" style="height:device-height;">
+      </div>
+
+
+  </div>
   </div>
 </body>
 </html>
