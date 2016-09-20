@@ -20,10 +20,11 @@
 
             <div class="row">
 
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-grn">
+                <!-- developer -->
+                <div class="col-lg-4 col-md-4 hidden-sm hidden-xs bg-grn">
                     <img src="assets/developer.png" alt="green_dev" class="img-responsive"
-                         onmouseover="showInfo(dev), hideInfo(h1_dev), hideInfo(h1_des), hideInfo(h1_lead)"
-                         onmouseout="hideInfo(dev), showInfo(h1_dev), showInfo(h1_des), showInfo(h1_lead)">
+                         onmouseover="showInfo(dev), hideInfo(h1_dev), hideInfo(h1_des), hideInfo(h1_lead), hideInfo(h1_dev)"
+                         onmouseout="hideInfo(dev), showInfo(h1_dev), showInfo(h1_des), showInfo(h1_lead), hideInfo(h1_dev)">
                     <div id="h1_dev" class="caption">
                         <h1>DEVELOPER</h1>
                     </div>
@@ -43,6 +44,7 @@
                 </div>
 
 
+                <!-- designer -->
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-purp">
                     <img src="assets/designer.png" alt="purple_des" class="img-responsive"
                          onmouseover="showInfo(des), hideInfo(h1_des), hideInfo(h1_dev), hideInfo(h1_lead)"
@@ -50,44 +52,24 @@
                     <div id="h1_des" class="caption">
                         <h1>DESIGNER</h1>
                     </div>
-                    <div id="des" class="caption-tall"style="display: none;"
-                         onmouseover="showInfo(this), hideInfo(h1_dev), hideInfo(h1_lead)"
-                         onmouseout="hideInfo(this), showInfo(h1_dev), showInfo(h1_lead)">
-                        <h2>
+                    <div id="des" class="caption"style="display: none;"
+                         onmouseover="showInfo(this), hideInfo(h1_dev), hideInfo(h1_lead), hideInfo(h1_des)"
+                         onmouseout="hideInfo(this), showInfo(h1_dev), showInfo(h1_lead), showInfo(h1_des)">
+                        <div class="row" id="btns">
                             <h2>DESIGNER</h2>
-                            <h4>
-                                I currently work as a UI/UX Designer for Georgia Tech Research Institute. My responsibilities include
-                                developing prototypes for new applications, participating in design discussions about UI standards across
-                                all of the applications my department develops, and creating user tests to validate the designs.
-                            </h4>
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub.png" alt="design-club-intro">
-                            <h4>
-                                My process for designing interfaces always starts with pen and paper: writing down the known requirements, and then brainstorming lots of
-                                different interfaces that could satisfy them.
-                            </h4>
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub2.png" alt="design-order-value">
-                            <h4>
-                                After brainstorming several different ideas on paper, I ask classmates and friends for feedback on the design - often asking them how
-                                they would complete a particular task given the interface depicted.
-                            </h4>
-                            <h4>
-                                The next step depends on the scope of the project. For smaller projects, I jump right into coding, and create the HTML & CSS files needed.
-                                The design process continues from there, and the files are used as a prototype for testing. For larger projects, I use Axure to create a medium fidelity mockup.
-                                I then seek feedback on this mockup, and try to create at least 3 or 4 different versions.
-                            </h4>
-                            <h4>
-                                After completing the medium-to-high fidelity mockups and testing those, I either begin implementation or hand off the mockups to a teammate, depending on the project structure.
-                            </h4>
+                            <button class="btn-purp btn-lg" onclick="showInfo(proc), hideInfo(proj)"><a href="#proc">Process</a></button>
+                            <button class="btn-purp btn-lg" onclick="showInfo(proj), hideInfo(proc)"><a href="#proj">Projects</a></button>
+                        </div>
 
-                        </h2>
                     </div>
                 </div>
 
 
+                <!-- leader -->
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-red">
                     <img src="assets/leader.png" alt="red_lead" class="img-responsive"
-                         onmouseover="showInfo(lead), hideInfo(h1_lead), hideInfo(h1_dev), hideInfo(h1_des)"
-                         onmouseout="hideInfo(lead), showInfo(h1_lead), showInfo(h1_dev), showInfo(h1_des)">
+                         onmouseover="showInfo(lead), hideInfo(h1_lead), hideInfo(h1_dev), hideInfo(h1_des), hideInfo(h1_lead)"
+                         onmouseout="hideInfo(lead), showInfo(h1_lead), showInfo(h1_dev), showInfo(h1_des), showInfo(h1_lead)">
                     <div id="h1_lead" class="caption">
                         <h1>LEADER</h1>
                     </div>
@@ -107,6 +89,104 @@
                         </h2>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                    <div id="proj" class="bg-purp-lt" style="display: none;">
+                        <!-- projects -->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h1>Projects</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="bg-purp-dk img-rounded">
+                                    Button Icon Guide
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="bg-purp-dk img-rounded">
+                                   Design Club Site
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="bg-purp-dk img-rounded">
+                                    Carter Center
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="bg-purp-dk img-rounded">
+                                  <h1>Personality Filter</h1>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <img class="img-responsive img-thumbnail" src="assets/persFilter.png" alt="personality-filter-home">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h4>
+                                                In January 2016, I was brought on the Personality Filter team as the UI specialist.
+                                                Inspired by the Pride flag, the light-sabre, and other Facebook profile picture
+                                                overlays, this team created a Facebook app that allows you to overlay one of several
+                                                images on your profile picture.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h4>
+                                                I updated the static, limited interface to
+                                                a dynamic, interactive version, with a responsive display.
+                                                Adding a filter now takes two clicks, including showing a preview,
+                                                and if the filter is applied successfully, a confirmation message is shown.
+                                            </h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <img class="img-responsive img-thumbnail" src="assets/persFilterModal.PNG" alt="personality-filter-modal">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- process -->
+                    <div id="proc" class="bg-purp-lt" style="display: none;">
+                        <h1>Process</h1>
+                        <div class="bg-purp-dk">
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/sharpie.png" alt="sharpie-sketches">
+                            <h4>
+                                My process for designing interfaces always starts with pen and paper: writing down the known requirements, and then brainstorming lots of
+                                different interfaces that could satisfy them.
+                            </h4>
+                        </div>
+                        <div class="bg-purp-dk">
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
+                            <h4>
+                                After brainstorming several different ideas on paper, I ask classmates and friends for feedback on the design - often asking them how
+                                they would complete a particular task given the interface depicted.
+                            </h4>
+                        </div>
+                        <h4>
+                            The next step depends on the scope of the project. For smaller projects, I jump right into coding, and create the HTML & CSS files needed.
+                            The design process continues from there, and the files are used as a prototype for testing. For larger projects, I use Axure to create a medium fidelity mockup.
+                            I then seek feedback on this mockup, and try to create at least 3 or 4 different versions.
+                        </h4>
+                        <h4>
+                            After completing the medium-to-high fidelity mockups and testing those, I either begin implementation or hand off the mockups to a teammate, depending on the project structure.
+                        </h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+                    </div>
             </div>
 
 
