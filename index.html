@@ -102,7 +102,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="bg-purp-dk img-rounded">
-                                    Button Icon Guide
+                                    <h1>Button Icon Guide<h1>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -141,7 +141,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="bg-purp-dk img-rounded">
-                                    Carter Center
+                                    <h1>Carter Center<h1>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -178,34 +178,41 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="btn-purp btn-lg" onclick="showInfo(proc), hideInfo(proj)"><a href="#proc">Process</a></button>
                     </div>
 
                     <!-- process -->
                     <div id="proc" class="bg-purp-lt" style="display: none;">
                         <h1>Process</h1>
-                        <div class="bg-purp-dk">
+                        <div class="bg-purp-dk img-rounded">
                             <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/sharpie.png" alt="sharpie-sketches">
                             <h4>
                                 My process for designing interfaces always starts with pen and paper: writing down the known requirements, and then brainstorming lots of
                                 different interfaces that could satisfy them.
                             </h4>
                         </div>
-                        <div class="bg-purp-dk">
+                        <div class="bg-purp-dk img-rounded">
                             <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
                             <h4>
                                 After brainstorming several different ideas on paper, I ask classmates and friends for feedback on the design - often asking them how
                                 they would complete a particular task given the interface depicted.
                             </h4>
                         </div>
-                        <h4>
+                        <div class="bg-purp-dk img-rounded">
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
+                            <h4>
                             The next step depends on the scope of the project. For smaller projects, I jump right into coding, and create the HTML & CSS files needed.
                             The design process continues from there, and the files are used as a prototype for testing. For larger projects, I use Axure to create a medium fidelity mockup.
                             I then seek feedback on this mockup, and try to create at least 3 or 4 different versions.
-                        </h4>
-                        <h4>
-                            After completing the medium-to-high fidelity mockups and testing those, I either begin implementation or hand off the mockups to a teammate, depending on the project structure.
-                        </h4>
+                            </h4>
                         </div>
+                        <div class="bg-purp-dk img-rounded">
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
+                            <h4>
+                            After completing the medium-to-high fidelity mockups and testing those, I either begin implementation or hand off the mockups to a teammate, depending on the project structure.
+                            </h4>
+                        </div>
+                        <button class="btn-purp btn-lg" onclick="showInfo(proj), hideInfo(proc)"><a href="#proj">Projects</a></button>
                 </div>
             </div>
         </div>
