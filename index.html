@@ -8,232 +8,111 @@
 <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
 <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
 <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/custom.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="assets/display.js"></script>
 </head>
 <body>
+<container>
 
-    <div id="navbar" class="nav">
-        <div class="alert text-center padding-0">
-
-            <div class="row">
-
-                <!-- developer -->
-                <div class="col-lg-4 col-md-4 hidden-sm hidden-xs bg-grn">
-                    <img src="assets/developer.png" alt="green_dev" class="img-responsive"
-                         onmouseover="showInfo(dev), hideInfo(h1_dev), hideInfo(h1_des), hideInfo(h1_lead), hideInfo(h1_dev)"
-                         onmouseout="hideInfo(dev), showInfo(h1_dev), showInfo(h1_des), showInfo(h1_lead), hideInfo(h1_dev)">
-                    <div id="h1_dev" class="caption">
-                        <h1>DEVELOPER</h1>
-                    </div>
-                    <div id="dev" class="caption-tall" style="display: none;"
-                         onmouseover="showInfo(this), hideInfo(h1_lead), hideInfo(h1_des)"
-                         onmouseout="hideInfo(this), showInfo(h1_lead), showInfo(h1_des)">
-                        <h2>
-                            <h2>DEVELOPER</h2>
-                            <h4>While working as an office assistant for Georgia Tech Housing, I developed a file manipulation system in Python.
-                                This system uses regular expressions to organize hundreds of files; it decreased the amount of time necessary
-                                to sort the files by about 50%. Special attention was given to the GUI, created with the Tkinter library.
-                            </h4>
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/ssshome.PNG" alt="file-program-home">
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/sssSuccess.PNG" alt="file-program-success">
-                        </h2>
-                    </div>
-                </div>
+    <!-- nav bar -->
+    <nav class="navbar">
+            What I've Done | What I'm Doing | What Comes Next
+    </nav>
+    <!-- close nav bar -->
 
 
-                <!-- designer -->
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-purp">
-                    <img src="assets/designer.png" alt="purple_des" class="img-responsive"
-                         onmouseover="showInfo(des), hideInfo(h1_des), hideInfo(h1_dev), hideInfo(h1_lead)"
-                         onmouseout="hideInfo(des), showInfo(h1_des), showInfo(h1_dev), showInfo(h1_lead)">
-                    <div id="h1_des" class="caption">
-                        <h1>DESIGNER</h1>
-                    </div>
-                    <div id="des" class="caption"style="display: none;"
-                         onmouseover="showInfo(this), hideInfo(h1_dev), hideInfo(h1_lead), hideInfo(h1_des)"
-                         onmouseout="hideInfo(this), showInfo(h1_dev), showInfo(h1_lead), showInfo(h1_des)">
-                        <div class="row" id="btns">
-                            <h2>DESIGNER</h2>
-                            <button class="btn-purp btn-lg" onclick="showInfo(proc), hideInfo(proj)"><a href="#proc">Process</a></button>
-                            <button class="btn-purp btn-lg" onclick="showInfo(proj), hideInfo(proc)"><a href="#proj">Projects</a></button>
-                        </div>
+    <!-- header & tagline -->
+    <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-0 col-sm-0">
+       </div>
 
-                    </div>
-                </div>
-
-
-                <!-- leader -->
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-red">
-                    <img src="assets/leader.png" alt="red_lead" class="img-responsive"
-                         onmouseover="showInfo(lead), hideInfo(h1_lead), hideInfo(h1_dev), hideInfo(h1_des), hideInfo(h1_lead)"
-                         onmouseout="hideInfo(lead), showInfo(h1_lead), showInfo(h1_dev), showInfo(h1_des), showInfo(h1_lead)">
-                    <div id="h1_lead" class="caption">
-                        <h1>LEADER</h1>
-                    </div>
-                    <div id="lead" class="caption-tall" style="display: none;"
-                         onmouseover="showInfo(this), hideInfo(h1_dev), hideInfo(h1_des)"
-                         onmouseout="hideInfo(this), showInfo(h1_dev), showInfo(h1_des)">
-                        <h2>
-                            <h2>LEADER</h2>
-                            <h4>
-                                I've been a member of Georgia Tech Design Club since August 2015. As of April 2016, I am the president of the organization. In addition to
-                                representing Design Club to external organizations, I develop our curriculum. This year, the organization is hosting a series
-                                of workshops that each focus on a specific part of the design process and introduce one tool appropriate for that phase of design. Topics
-                                covered include wireframing, color theory, user research, and the purposes of various fidelity prototypes.
-                            </h4>
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub.png" alt="design-club-intro">
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub2.png" alt="design-order-value">
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div id="proj" class="bg-purp-lt" style="display: none;">
-                        <!-- projects -->
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h1>Projects</h1>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="bg-purp-dk img-rounded">
-                                    <h1>Button Icon Guide<h1>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="bg-purp-dk img-rounded">
-                                   <h1>Design Club Site</h1>
-                                        <br>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <img class="img-responsive img-thumbnail" src="assets/dcSiteHome.png" alt="design-club-home">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <h4>
-                                                    Design Club hosts weekly design discussion or workshops on different tools. This website's purpose
-                                                    is to showcase the soonest workshop and provide links to content and tutorials that support the
-                                                    concept being explored.
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <h4>
-                                                    Previous workshops have included Workflows, Illustrator, Axure, and wireframing. The website needed
-                                                    to display what topics we cover; the team decided that displaying the graphics from past workshops
-                                                    would the most straightforward to communicate our curriculum.
-                                                </h4>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <img class="img-responsive img-thumbnail" src="assets/dcSiteEvents.png" alt="design-club-events">
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="bg-purp-dk img-rounded">
-                                    <h1>Carter Center<h1>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="bg-purp-dk img-rounded">
-                                  <h1>Personality Filter</h1>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <img class="img-responsive img-thumbnail" src="assets/persFilter.png" alt="personality-filter-home">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <h4>
-                                                In January 2016, I was brought on the Personality Filter team as the UI specialist.
-                                                Inspired by the Pride flag, the light-sabre, and other Facebook profile picture
-                                                overlays, this team created a Facebook app that allows you to overlay one of several
-                                                images on your profile picture.
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <h4>
-                                                I updated the static, limited interface to
-                                                a dynamic, interactive version, with a responsive display.
-                                                Adding a filter now takes two clicks, including showing a preview,
-                                                and if the filter is applied successfully, a confirmation message is shown.
-                                            </h4>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <img class="img-responsive img-thumbnail" src="assets/persFilterModal.PNG" alt="personality-filter-modal">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn-purp btn-lg" onclick="showInfo(proc), hideInfo(proj)"><a href="#proc">Process</a></button>
-                    </div>
-
-                    <!-- process -->
-                    <div id="proc" class="bg-purp-lt" style="display: none;">
-                        <h1>Process</h1>
-                        <div class="bg-purp-dk img-rounded">
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/sharpie.png" alt="sharpie-sketches">
-                            <h4>
-                                My process for designing interfaces always starts with pen and paper: writing down the known requirements, and then brainstorming lots of
-                                different interfaces that could satisfy them.
-                            </h4>
-                        </div>
-                        <div class="bg-purp-dk img-rounded">
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
-                            <h4>
-                                After brainstorming several different ideas on paper, I ask classmates and friends for feedback on the design - often asking them how
-                                they would complete a particular task given the interface depicted.
-                            </h4>
-                        </div>
-                        <div class="bg-purp-dk img-rounded">
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
-                            <h4>
-                            The next step depends on the scope of the project. For smaller projects, I jump right into coding, and create the HTML & CSS files needed.
-                            The design process continues from there, and the files are used as a prototype for testing. For larger projects, I use Axure to create a medium fidelity mockup.
-                            I then seek feedback on this mockup, and try to create at least 3 or 4 different versions.
-                            </h4>
-                        </div>
-                        <div class="bg-purp-dk img-rounded">
-                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/balsamiq.png" alt="balsamiq-mockups">
-                            <h4>
-                            After completing the medium-to-high fidelity mockups and testing those, I either begin implementation or hand off the mockups to a teammate, depending on the project structure.
-                            </h4>
-                        </div>
-                        <button class="btn-purp btn-lg" onclick="showInfo(proj), hideInfo(proc)"><a href="#proj">Projects</a></button>
-                </div>
-            </div>
+        <div class="col-lg-4 col-md-4 col-sm-0 col-sm-0 text-center">
+            <h1>Rania Glass</h1>
+            <h4>Interaction Designer</h4>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
 
+        <div class="col-lg-4 col-md-4 col-sm-0 col-sm-0">
+        </div>
+    </div>
+    <!-- close header & tagline -->
+
+    <!-- how I got into design -->
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0">
+            <img src="assets/student.png" class="img-responsive img-smaller img-thumbnail">
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-0 col-xs-0">
+            <br>
+            <br>
+            <br>
+            <br>
+            I got into design because (5- line STORY)
+        </div>
+    </div>
+    <!-- close how I got into design -->
+
+    <!-- what I've Done -->
+    <div class="row margin-20 text-center">
+        <h3>What I've Done</h3>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+           Personality Filter
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            Imposter Syndrome Vigilante
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+        </div>
+    </div>
+    <!-- close what I've Done -->
+
+    <!-- what I'm Doing-->
+    <div class="row text-center">
+        <h3>What I'm Doing</h3>
+        <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            UI Docs App
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            Carter Center (coursework)
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            Design Club
+        </div>
+
+    </div>
+    <!-- close what I'm Doing -->
+
+    <!-- what's next -->
+    <div class="row text-center">
+        <h3>What Comes Next?</h3>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            Seeking an internship
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        </div>
+
+    </div>
+    <!-- close what's next -->
+
+
+</container>
 </body>
 </html>
-                    </div>
-            </div>
-
-
-
-                    </div>
-                </div>
-<script>
-    function showInfo(x) {
-        x.style.display="block";
-    }
-    function hideInfo(x) {
-        x.style.display="none";
-    }
-</script>
-
 </body>
 </html>
