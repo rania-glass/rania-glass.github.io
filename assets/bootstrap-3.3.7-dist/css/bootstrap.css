@@ -12,6 +12,13 @@ html {
 body {
   margin: 0;
 }
+
+.homebody {
+    margin: 0;
+    background: url('vines.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+}
 article,
 aside,
 details,
@@ -6810,6 +6817,7 @@ button.close {
 .bg-grn:hover {
   background-color: #fff;
 }
+
 
 .bg-grn {
     background-color: #005737;

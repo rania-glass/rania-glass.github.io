@@ -6,3 +6,21 @@
 .margin-10 {
     margin: 10%;
 }
+
+.white-font {
+    color: #fff;
+    font-size: large;
+}
+
+.white-font:hover {
+    color: #000;
+    font-size: large;
+}
+
+.vert-center {
+    margin-top: 45%;
+    display: inline-block;
+    vertical-align: middle;
+    /*float: none;*/
+    height: 100%;
+}

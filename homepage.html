@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome.</title>
+    <!--  CSS sheets  -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/custom.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/display.js"></script>
+</head>
+<body class="homebody">
+<div class="row">
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+        <img class="img-responsive" src="assets/homepage/flower1.jpg">
+    </div>
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+        <img class="img-responsive" src="assets/homepage/flower2.jpg">
+    </div>
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+        <img class="img-responsive" src="assets/homepage/flower3.jpg">
+    </div>
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+        <img class="img-responsive" src="assets/homepage/flower4.jpg">
+    </div>
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+        <img class="img-responsive" src="assets/homepage/flower5.jpg">
+    </div>
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+        <img class="img-responsive" src="assets/homepage/flower6.jpg">
+    </div>
+</div>
+
+<div class="row margin-10">
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 bg-grn white-font ">
+        <a href="https://keep.google.com">Keep</a>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 bg-grn white-font ">
+        Gmail Window
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 bg-grn white-font  white-font">
+        Messenger link
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center white-font">
+        <h2><div id="clockbox"></div></h2>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+    function GetClock(){
+        var d=new Date();
+        var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+        if(nyear<1000) nyear+=1900;
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+        if(nhour==0){ap=" AM";nhour=12;}
+        else if(nhour<12){ap=" AM";}
+        else if(nhour==12){ap=" PM";}
+        else if(nhour>12){ap=" PM";nhour-=12;}
+
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+
+        document.getElementById('clockbox').innerHTML=""+tday[nday]+"<br> "+tmonth[nmonth]+" "+ndate+", "+nyear+"<br>"+nhour+":"+nmin;
+    }
+
+    window.onload=function(){
+        GetClock();
+        setInterval(GetClock,1000);
+    }
+</script>
+</html>
