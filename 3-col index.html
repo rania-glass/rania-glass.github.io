@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rania Glass</title>
+<!--  CSS sheets  -->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/display.js"></script>
+</head>
+<body>
+
+    <div id="navbar" class="nav">
+        <div class="alert text-center padding-0">
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-grn">
+                    <img src="assets/developer.png" alt="green_dev" class="img-responsive"
+                         onmouseover="showInfo(dev), hideInfo(h1_dev), hideInfo(h1_des), hideInfo(h1_lead)"
+                         onmouseout="hideInfo(dev), showInfo(h1_dev), showInfo(h1_des), showInfo(h1_lead)">
+                    <div id="h1_dev" class="caption">
+                        <h1>DEVELOPER</h1>
+                    </div>
+                    <div id="dev" class="caption-tall" style="display: none;">
+                        <h2>
+                            <h2>DEVELOPER</h2>
+                            <h4>While working as an office assistant for Georgia Tech Housing, I developed a file manipulation system in Python.
+                                This system uses regular expressions to organize hundreds of files; it decreased the amount of time necessary
+                                to sort the files by about 50%. Special attention was given to the GUI, created with the Tkinter library.
+                            </h4>
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/ssshome.PNG" alt="file-program-home">
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/sssSuccess.PNG" alt="file-program-success">
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-purp">
+                    <img src="assets/designer.png" alt="purple_des" class="img-responsive"
+                         onmouseover="showInfo(des), hideInfo(h1_des), hideInfo(h1_dev), hideInfo(h1_lead)"
+                         onmouseout="hideInfo(des), showInfo(h1_des), showInfo(h1_dev), showInfo(h1_lead)">
+                    <div id="h1_des" class="caption">
+                        <h1>DESIGNER</h1>
+                    </div>
+                    <div id="des" class="caption-tall"style="display: none;">
+                        <h2>
+                            <h2>DESIGNER</h2>
+                            <h4>
+                                I currently work as a UI/UX Designer for Georgia Tech Research Institute. My responsibilities include
+                                developing prototypes for new applications, participating in design discussions about UI standards across
+                                all of the applications my department develops, and creating user tests to validate the designs.
+                            </h4>
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub.png" alt="design-club-intro">
+                            <h4>
+                                My process for designing interfaces always starts with pen and paper: writing down the known requirements, and then brainstorming lots of
+                                different interfaces that could satisfy them.
+                            </h4>
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub2.png" alt="design-order-value">
+                            <h4>
+                                After brainstorming several different ideas on paper, I ask classmates and friends for feedback on the design - often asking them how
+                                they would complete a particular task given the interface depicted.
+                            </h4>
+                            <h4>
+                                The next step depends on the scope of the project. For smaller projects, I jump right into coding, and create the HTML & CSS files needed.
+                                The design process continues from there, and the files are used as a prototype for testing. For larger projects, I use Axure to create a medium fidelity mockup.
+                                I then seek feedback on this mockup, and try to create at least 3 or 4 different versions.
+                            </h4>
+                            <h4>
+                                After completing the medium-to-high fidelity mockups and testing those, I either begin implementation or hand off the mockups to a teammate, depending on the project structure.
+                            </h4>
+
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-red">
+                    <img src="assets/leader.png" alt="red_lead" class="img-responsive"
+                         onmouseover="showInfo(lead), hideInfo(h1_lead), hideInfo(h1_dev), hideInfo(h1_des)"
+                         onmouseout="hideInfo(lead), showInfo(h1_lead), showInfo(h1_dev), showInfo(h1_des)">
+                    <div id="h1_lead" class="caption">
+                        <h1>LEADER</h1>
+                    </div>
+                    <div id="lead" class="caption-tall"style="display: none;">
+                        <h2>
+                            <h2>LEADER</h2>
+                            <h4>
+                                I've been a member of Georgia Tech Design Club since August 2015. As of April 2016, I am the president of the organization. In addition to
+                                representing Design Club to external organizations, I develop our curriculum. This year, the organization is hosting a series
+                                of workshops that each focus on a specific part of the design process and introduce one tool appropriate for that phase of design. Topics
+                                covered include wireframing, color theory, user research, and the purposes of various fidelity prototypes.
+                            </h4>
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub.png" alt="design-club-intro">
+                            <img class="img-responsive img-thumbnail" style="height: 75%; width: 75%; margin: 2%;" src="assets/designClub2.png" alt="design-order-value">
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+                    </div>
+                </div>
+<script>
+    function showInfo(x) {
+        x.style.display="block";
+    }
+    function hideInfo(x) {
+        x.style.display="none";
+    }
+</script>
+
+</body>
+</html>
