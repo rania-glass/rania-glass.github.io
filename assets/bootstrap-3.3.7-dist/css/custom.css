@@ -46,3 +46,13 @@ a:hover {
     color: #fff;
 }
 
+.btn-blue {
+    color: #fff;
+    background-color: #091037;
+    border-color: #111111;
+}
+.btn-blue:hover {
+    color: #fff;
+    background-color: #091a61;
+    border-color: #111111;
+}
