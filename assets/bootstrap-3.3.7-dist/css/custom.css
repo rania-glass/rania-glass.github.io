@@ -1,26 +1,25 @@
 .img-smaller {
-    height: 75%;
-    width: 75%;
+    height: 90%;
+    width: 90%;
 }
 
 .margin-10 {
     margin: 10%;
 }
 
-.white-font {
-    color: #fff;
-    font-size: large;
+.padding-5 {
+    padding: 5%;
 }
 
-.white-font:hover {
-    color: #000;
-    font-size: large;
+
+.margin-1 {
+    margin: 2%;
 }
 
-.vert-center {
-    margin-top: 45%;
-    display: inline-block;
-    vertical-align: middle;
-    /*float: none;*/
-    height: 100%;
+.bg-blue {
+    background: rgba(0, 0, 255, .1);
+}
+
+.bg-gray {
+    background: rgba(0, 0, 0, .2);
 }

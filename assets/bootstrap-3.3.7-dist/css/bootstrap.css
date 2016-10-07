@@ -51,7 +51,6 @@ template {
 }
 a {
   background-color: transparent;
-  color: #fff;
 }
 a:active,
 a:hover {
@@ -121,7 +120,7 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 2%;
+  margin: 0;
   font: inherit;
   color: inherit;
 }
@@ -1105,13 +1104,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #fff;
+  color: #337ab7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #000;
-  text-decoration: none;
+  color: #23527c;
+  text-decoration: underline;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -1140,7 +1139,6 @@ img {
   max-width: 100%;
   height: auto;
   padding: 4px;
-  margin: 3%;
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -6784,34 +6782,6 @@ button.close {
 
 .bg-purp {
     background-color: #6c006c;
-}
-
-.bg-purp-lt {
-  color: #fff;
-  background-color: rgba(108, 0, 108, 0.3);
-  margin: 3%;
-  padding: 6%;
-}
-
-.bg-purp-dk {
-  color: #fff;
-  background-color: rgba(108, 0, 108, 0.8);
-  margin: 3%;
-  padding: 6%;
-}
-/*.bg-purp-dk:hover {*/
-  /*color: #000;*/
-  /*background-color: #fff;*/
-  /*border-style: solid;*/
-  /*border-width: thick;*/
-  /*border-color: rgb(108, 0, 108);*/
-/*}*/
-/*change made */
-
-.btn-purp {
-  color: #fff;
-  background-color: #6c006c;
-  border-color: #5c005c;
 }
 
 .bg-grn:hover {
