@@ -56,3 +56,41 @@ a:hover {
     background-color: #091a61;
     border-color: #111111;
 }
+
+.cc-blue {
+    background: #60efc7;
+}
+
+.cc-h1 {
+    color: #fff;
+    font-size: 150px;
+}
+
+.cc-h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.cc-blue-text {
+    color: #60efc7;
+}
+
+.cc-background-img {
+    background-image: url("woman1.jpg");
+    background-size: 100% 100%;
+
+}
+.cc-caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #fff;
+}
+.cc-gray {
+    background: #b3b2b3;
+}
+
+.cc-dk-gray {
+    background: #454545;
+}
+
