@@ -76,7 +76,7 @@ a:hover {
 }
 
 .cc-background-img {
-    background-image: url("woman1.jpg");
+    background-image: url("woman1.png");
     background-size: 100% 100%;
 
 }
@@ -92,5 +92,6 @@ a:hover {
 
 .cc-dk-gray {
     background: #454545;
+    color: #fff;
 }
 
