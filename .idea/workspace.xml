@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a154e144-b38c-4fb9-8ca9-9b17c68d8bed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cc-confirmation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cc-preferences.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/bootstrap-3.3.7-dist/css/custom.css" afterPath="$PROJECT_DIR$/assets/bootstrap-3.3.7-dist/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cartercenterdemo.html" afterPath="$PROJECT_DIR$/cartercenterdemo.html" />
-    </list>
+    <list default="true" id="a154e144-b38c-4fb9-8ca9-9b17c68d8bed" name="Default" comment="" />
     <ignored path="rania-glass.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -59,8 +53,8 @@
       <file leaf-file-name="cc-preferences.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cc-preferences.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="447">
+              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
               <folding>
                 <marker date="1478734701312" expanded="false" signature="1177:1198" ph="..." />
                 <marker date="1478734701312" expanded="false" signature="1260:1277" ph="..." />
@@ -664,7 +658,7 @@
       <workItem from="1476122513136" duration="811000" />
       <workItem from="1478710934872" duration="3789000" />
       <workItem from="1478730902760" duration="1761000" />
-      <workItem from="1478733977443" duration="780000" />
+      <workItem from="1478733977443" duration="1012000" />
     </task>
     <task id="LOCAL-00001" summary="steady hover">
       <created>1474349093905</created>
@@ -705,7 +699,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38062000" />
+    <option name="totallyTimeSpent" value="38294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -722,7 +716,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24905661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24905661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1152,8 +1146,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cc-preferences.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="447">
+          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
           <folding>
             <marker date="1478734701312" expanded="false" signature="1177:1198" ph="..." />
             <marker date="1478734701312" expanded="false" signature="1260:1277" ph="..." />
