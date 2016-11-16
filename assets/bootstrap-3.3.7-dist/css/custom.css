@@ -21,6 +21,7 @@
 
 .bg-blue {
     background: #091037;
+    color: #fff;
 }
 
 .bg-gray {
@@ -72,7 +73,7 @@ a:hover {
 }
 
 .cc-blue-text {
-    color: #60efc7;
+    color: #2a6c5e;
 }
 
 .cc-background-img {
@@ -87,7 +88,9 @@ a:hover {
     color: #fff;
 }
 .cc-gray {
-    background: #b3b2b3;
+    background-color: #7f7e7f;
+    color: #000;
+
 }
 
 .cc-dk-gray {

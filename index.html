@@ -5,23 +5,44 @@
   <title>Rania Glass</title>
 <!--  CSS sheets  -->
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
-<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
-<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/custom.css">
-<link rel="icon" type="img/ico" href="assets/favicon.ico">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="assets/display.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="img/ico" href="assets/favicon.ico">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        function showImage(imgid, elemid)
+        {
+            $('#'+elemid).on("click", function () {
+                $('#imagepreview').attr('src', $('#'+imgid).attr('src')); // here assign the image to the modal when the user click the enlarge link
+                jQuery('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then call show()
+            });
+        }
+    </script>
 </head>
 <body>
 <container>
 
-    <!-- nav bar -->
-    <!--<nav class="navbar">-->
-            <!--What I've Done | What I'm Doing | What Comes Next-->
-    <!--</nav>-->
-    <!-- close nav bar -->
+    <!-- Creates the bootstrap modal where the image will appear -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" id="imagepreview" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- header & tagline -->
@@ -49,18 +70,11 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center vcenter">
             <div class="row">
             <h3 class="dark-text">
-                When I was a child, I wanted to be an inventor. There's a thrill in using the imagination to dream up things, all kinds of things, that still excites and inspires.
-
-            As an older child, I was drawn to architecture, to costuming, and to interior design. My imagination was captured by the beautiful spaces and displays created;
-                I was inspired by the functionality of the pieces I saw. When I moved into a dorm room my freshman year of college, my plans for the room weren't inspired by
-                fairy lights and DIY art projects - they were driven by the goal of creating a space where I could study and relax effectively. My decorative and organizational
-                choices followed from research into how best to create that space. My freshman dorm was awesome because it was driven by design, I just didn't have the word for it yet. </h3>
-
-            <h3 class="dark-text">
-            I changed my major at the end of that freshman year to computer science. This is where the inventors are, I thought. These are the people building the future.
-                Then I saw what the designers do.
-            It's the designers who envision the future, piece by piece, step by step. How can we live better? Brilliant solutions start with design.
-            When I started to understand that, I realized that I want to be a designer.
+                When I was a child, I wanted to be an inventor. There's a thrill in using the imagination to dream up things – all kinds of things – that still excites and inspires me. As I got older, I was drawn to architecture, costuming, and interior design. My imagination was captured by  beautiful spaces and displays, and I was inspired by the functionality of the pieces I saw.
+                When I moved into my freshman dorm, my plans for the room weren't inspired by fairy lights or DIY art projects; they were driven by the goal of creating a space in which I could study and relax effectively. My decorative and organizational choices were based on research into how best to create that space. My freshman dorm was awesome because it was driven by design - I just didn't have the word for it yet.
+            </h3>
+             <h3 class="dark-text">
+                At the end of freshman year, I changed my major to Computer Science. "This is where the inventors are," I thought. "These are the people building the future." Then, I saw what the designers do: It's the designers who envision the future, piece by piece, step by step, and who ask "How can we live better?" Brilliant inventions start with design. When I started to understand that, I realized that a designer is what I truly want to be.
             </h3>
             </div>
 
@@ -88,10 +102,12 @@
     <!-- what I've Done -->
     <div class="row text-center bg-gray margin-1 img-rounded" id="done">
         <h1>What I've Done</h1>
-        <h3 class="dark-text">These are some of the digital products I've designed.  <!-- <a href="spaces.html" style="color: #0f0f0f;">Here</a> are some of the physical-->
-            <!--spaces I've created.-->
+        <h3 class="dark-text">These are some of the digital products I've designed.  <!-- <a href="spaces.html" style="color: #0f0f0f;">Here</a> are some of the physical--><!--spaces I've created.-->
         </h3>
-    <div class="row padding-10 text-center bg-blue img-rounded margin-1">
+
+        <!-- Facebook Filter -->
+        <div class="bg-blue img-rounded margin-1">
+            <div class="row padding-10 text-center img-rounded margin-1">
             <h2 class="margin-1">Facebook Filter</h2>
             <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0">
@@ -137,11 +153,12 @@
                     the easier the product is to use.
                 </p>
             </div>
+          </div>
         </div>
 
-
-    <!-- Design Club Site -->
-        <div class="row padding-10 text-center bg-blue img-rounded margin-1">
+        <!-- Design Club Site -->
+        <div class="bg-blue img-rounded margin-1">
+            <div class="row padding-10 text-center img-rounded margin-1">
             <h2 class="margin-1">Design Club Website</h2>
             <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0">
@@ -185,6 +202,7 @@
                 <img src="assets/members2.png" class="img-thumbnail img-responsive">
                 <p>Is it a useful means of communication?</p>
             </div>
+        </div>
         </div>
     </div>
     </div>
@@ -264,8 +282,11 @@
 
         </div>
         </div>
+
+
         <!-- Carter Center -->
-        <div class="row bg-blue img-rounded margin-1">
+        <div class="bg-blue img-rounded margin-1">
+            <div class="row padding-10 text-center img-rounded margin-1">
             <h2 class="margin-1">Carter Center's Forum on Women</h2>
             <h5 class="padding-1">I'm taking a class in UI Design this semester, and my team is working with the Carter Center
                 in Atlanta, GA on a website redesign. This team was randomly assigned from students in the class, and there are five total members, including me.
@@ -284,7 +305,9 @@
                     <h5>
                         We gathered this data to establish an understanding of what systems users are accustomed to and what their expectations are when reading about social issues.
                     </h5>
-                    <img src="assets/CCgraph1.png" class="img-responsive img-thumbnail padding-1">
+                    <a href="#doing" id="ccg">
+                        <img id="ccg1" src="assets/CCgraph1.png" class="img-responsive img-thumbnail padding-1" alt="Graph 1" onclick="showImage('ccg1', 'ccg')">
+                    </a>
                     <h5>
                         The results of the survey data can be seen <a href="https://drive.google.com/open?id=1QE41kAFYC2GYOLFeafRgrkK8xXNrCXM0hc-8J3jMBkk">here</a>.
                     </h5>
@@ -299,19 +322,26 @@
                     A print media campaign is the most passive interface we could think of, but it has a higher initial cost and there are location restrictions on where the prints could be placed
                     that makes that interface uniquely challenging.
                 </h5>
-                <img src="assets/billboardIdeation.JPG" class="img-responsive img-thumbnail padding-1">
+
+                <a href="#doing" id="bbidtnid">
+                    <img id="bbidtn" src="assets/billboardIdeation.JPG" class="img-responsive img-thumbnail padding-1" alt="Billboard Ideation" onclick="showImage('bbidtn', 'bbidtnid')">
+                </a>
                 <h5>This was a divergence point in the design cycle because we aimed to come up with as many ideas and as creative ideas as possible.</h5>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 margin-1">
                 <h4 class="margin-1">Prototyping</h4>
                 <h5>Our very talented graphic designer, Erik, used Illustrator to craft these high fidelity mockups.</h5>
-                <img src="assets/PosterMock4.jpg" class="img-responsive img-thumbnail padding-1">
+                <a href="#doing" id="pm4id">
+                    <img id="pm4" src="assets/PosterMock4.jpg" class="img-responsive img-thumbnail padding-1" alt="Billboard Ideation" onclick="showImage('pm4', 'pm4id')">
+                </a>
                 <h5>
                     Our prototypes are meant to simulate the actual experience associated with seeing a poster or opening an email newsletter. These prototypes are tools that will be used to test
                 the validity of our designs. We now have visual assets, and we can assess the cost of creating more like them and apply our usability criteria to them to determine how effectively
                     they solve the problem presented.
                 </h5>
-                <img src="assets/NewsletterMockup.jpg" class="img-responsive img-thumbnail padding-1">
+                <a href="#doing" id="nlmid">
+                    <img id="nlm" src="assets/NewsletterMockup.jpg" class="img-responsive img-thumbnail padding-1" alt="Billboard Ideation" onclick="showImage('nlm', 'nlmid')">
+                </a>
 
             </div>
             <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 margin-1">
