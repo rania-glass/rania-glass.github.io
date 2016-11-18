@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a154e144-b38c-4fb9-8ca9-9b17c68d8bed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/bootstrap-3.3.7-dist/css/custom.css" afterPath="$PROJECT_DIR$/assets/bootstrap-3.3.7-dist/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="rania-glass.github.io.iws" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="272" column="14" selection-start-line="272" selection-start-column="14" selection-end-line="272" selection-end-column="14" />
+            <state relative-caret-position="522">
+              <caret line="198" column="20" selection-start-line="198" selection-start-column="20" selection-end-line="200" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#container#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#2001#2008#0" expanded="true" />
@@ -626,7 +625,7 @@
       <workItem from="1479258571063" duration="882000" />
       <workItem from="1479262120885" duration="46000" />
       <workItem from="1479264586684" duration="7841000" />
-      <workItem from="1479442786016" duration="3015000" />
+      <workItem from="1479442786016" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="steady hover">
       <created>1474349093905</created>
@@ -667,7 +666,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53070000" />
+    <option name="totallyTimeSpent" value="53439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1250,8 +1249,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="272" column="14" selection-start-line="272" selection-start-column="14" selection-end-line="272" selection-end-column="14" />
+        <state relative-caret-position="522">
+          <caret line="198" column="20" selection-start-line="198" selection-start-column="20" selection-end-line="200" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#container#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#2001#2008#0" expanded="true" />
